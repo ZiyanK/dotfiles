@@ -134,7 +134,7 @@ nnoremap <expr><C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " }}}
 
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 
