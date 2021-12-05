@@ -155,6 +155,7 @@ Plug 'farmergreg/vim-lastplace'
 Plug 'romgrk/winteract.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'APZelos/blamer.nvim'
+Plug 'scrooloose/nerdcommenter'
 
 " Plug 'junegunn/seoul256.vim'
 
