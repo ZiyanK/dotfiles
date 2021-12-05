@@ -154,6 +154,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'farmergreg/vim-lastplace'
 Plug 'romgrk/winteract.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'APZelos/blamer.nvim'
 
 " Plug 'junegunn/seoul256.vim'
 
@@ -191,6 +192,10 @@ nmap <leader>rw :InteractiveWindow<CR>
 
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
+" Moving lines around in visual mode
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 " Comment
 noremap <C-_> :Commentary<CR>
 
@@ -220,6 +225,9 @@ let g:lightline = {
 			\ }
 
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+
+" Git blmaer
+let g:blamer_enabled = 1
 
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)"
