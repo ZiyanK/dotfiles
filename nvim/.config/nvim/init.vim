@@ -156,6 +156,10 @@ Plug 'romgrk/winteract.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'APZelos/blamer.nvim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'mxw/vim-jsx'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'christoomey/vim-system-copy'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Plug 'junegunn/seoul256.vim'
 
@@ -169,7 +173,6 @@ map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
-inoremap kj <C-C>
 inoremap jk <C-C>
 noremap  <C-l> :tabn<CR>
 noremap  <C-h> :tabp<CR>
@@ -183,6 +186,8 @@ noremap  <leader>fb :Buffers<CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 " To source vimrc quickly
 nnoremap <leader>sv :source $MYVIMRC<cr>
+" To run Prettier
+nnoremap <leader>pp :Prettier<cr>
 
 " Window split shortcuts
 nnoremap <leader>v :vsplit<CR>
