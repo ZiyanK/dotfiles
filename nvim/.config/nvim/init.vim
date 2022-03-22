@@ -217,6 +217,13 @@ augroup removeTrailingSpace
     autocmd BufWritePre *.*
 augroup END
 
+" Git gutter
+highlight GitGutterAdd guifg=#009900 ctermfg=Green
+highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
+highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
+nmap ) <Plug>(GitGutterNextHunk)
+nmap ( <Plug>(GitGutterPrevHunk)
+
 " Lightline config
 let g:lightline = {
 			\ 'colorscheme': 'seoul256',
