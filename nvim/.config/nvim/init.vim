@@ -206,7 +206,7 @@ vnoremap K :m '<-2<CR>gv=gv
 noremap <C-_> :Commentary<CR>
 
 " GruvBox Config
-let g:gruvbox_contrast_dark = 'dark'
+let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_improved_warnings = '1'
 let g:gruvbox_guisp_fallback = 'bg'
 colorscheme gruvbox
