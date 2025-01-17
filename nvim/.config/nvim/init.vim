@@ -138,28 +138,28 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
-" Plug 'tpope/vim-sensible'
-" Plug 'preservim/NERDTree'
-" Plug 'gruvbox-community/gruvbox'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'itchyny/lightline.vim'
-" Plug 'josa42/vim-lightline-coc'
-" Plug 'itchyny/vim-gitbranch'
-" Plug 'christoomey/vim-system-copy'
-" Plug 'frazrepo/vim-rainbow'
-" Plug 'airblade/vim-gitgutter'
-" Plug 'Yggdroot/indentLine'
-" Plug 'farmergreg/vim-lastplace'
-" Plug 'romgrk/winteract.vim'
-" Plug 'jiangmiao/auto-pairs'
-" Plug 'APZelos/blamer.nvim'
-" Plug 'scrooloose/nerdcommenter'
-" Plug 'mxw/vim-jsx'
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-" Plug 'christoomey/vim-system-copy'
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-sensible'
+Plug 'preservim/NERDTree'
+Plug 'gruvbox-community/gruvbox'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'itchyny/lightline.vim'
+Plug 'josa42/vim-lightline-coc'
+Plug 'itchyny/vim-gitbranch'
+Plug 'christoomey/vim-system-copy'
+Plug 'frazrepo/vim-rainbow'
+Plug 'airblade/vim-gitgutter'
+Plug 'Yggdroot/indentLine'
+Plug 'farmergreg/vim-lastplace'
+Plug 'romgrk/winteract.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'APZelos/blamer.nvim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'mxw/vim-jsx'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'christoomey/vim-system-copy'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Plug 'junegunn/seoul256.vim'
 
@@ -206,7 +206,7 @@ vnoremap K :m '<-2<CR>gv=gv
 noremap <C-_> :Commentary<CR>
 
 " GruvBox Config
-let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_contrast_dark = 'dark'
 let g:gruvbox_improved_warnings = '1'
 let g:gruvbox_guisp_fallback = 'bg'
 colorscheme gruvbox
